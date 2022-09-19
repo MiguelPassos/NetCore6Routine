@@ -15,6 +15,8 @@
     {
         public string? ConnectionString { get; set; }
 
+        public ConnectionStrings? Connections { get; set; }
+
         public Configurations? Configurations { get; set; }
 
         public SecuritySettings? SecuritySettings { get; set; }
@@ -22,11 +24,9 @@
 
     public class ConnectionStrings
     {
-        public string? DevConnection { get; set; }
+        public string? ServidorPrimario { get; set; }
 
-        public string? ProdConnection { get; set; }
-
-        public string? HomolConnection { get; set; }
+        public string? ServidorSecundario { get; set; }
     }
 
     public class Configurations
